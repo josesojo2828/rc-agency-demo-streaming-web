@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: dark;
+}
+
+@layer base {
+    body {
+        @apply bg-base-100 text-white font-sans;
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
